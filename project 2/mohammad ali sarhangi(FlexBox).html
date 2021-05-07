@@ -1,0 +1,55 @@
+<!doctype html>
+
+<title>Example</title>
+<style>
+	  * {
+		box-sizing: border-box; 
+	  }
+	  body {
+		display: flex;
+		min-height: 100vh;
+		flex-direction: column;
+		margin: 0;
+		text-align: center;
+	  }
+	  #main {
+		display: flex;
+		flex: 1;
+	  }
+	  #main > article {
+		flex: 1;
+		order: 1;
+	  }
+	  #main > nav, 
+	  #main > aside {
+		flex: 0 0 22vw;
+	  }
+	  #main > nav {
+		background: rgb(49, 33, 92);
+		order: 5.5;
+	  }
+	  #main > aside {
+		background: rgb(2, 8, 90);
+		order: 5.5;
+	  }
+	  header, footer {
+		background: rgb(5, 94, 74);
+		height: 5.5vh;
+	  }
+	  header, footer, article, nav, aside {
+		padding: 3.5em;
+	  }
+</style>
+
+<body>
+		<h3>
+				<header>header style</header>
+				<div id="main">
+				<article>article style</article>
+				<nav>navigation style</nav>
+				<aside>aside style</aside>
+				</div>
+				<footer>footer style</footer>
+		</h3>
+  
+</body>
